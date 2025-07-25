@@ -249,7 +249,7 @@ header a {
     
 
 /* footer styles */
-footer{
+footer {
     text-align: center;
       font-size: 0.9em;
       color: #666;
@@ -321,3 +321,40 @@ footer{
     .cta p {
         color: #F9FAF8;
     }
+#form-description {
+    background-color: #1F2937;
+    color: #F9FAF8;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#form-description-container {
+    width:60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#form-description-container h2 {
+    font-weight: 800;
+    font-size: 40px;
+}
+
+#form-description-container h4 {
+    font-weight: 800;
+    font-size: 30px;
+}
+
+#form-description-container li {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+#form-container {
+    background-color: #F9FAF8;
+    height: 80vh;
+}
