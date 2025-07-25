@@ -256,3 +256,40 @@ footer{
     color: #F9FAF8;
     background-color: #1F2937;
 }
+
+/* sign up styles */
+
+#form-description {
+    background-color: #1F2937;
+    color: #F9FAF8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#form-description-container {
+    width: 60vw;
+    list-style: disc;
+    padding-left: 2rem;
+}
+
+#form-description-container h2 {
+    font-weight: 800;
+    font-size: 40px;
+}
+
+#form-description-container h4 {
+    font-weight: 800;
+    font-size: 30px;
+}
+
+#form-description-container li {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+#form-container {
+    background-color: #F9FAF8;
+}
