@@ -13,9 +13,9 @@
         <div id="navigation-bar">
             <a href="index.html"><h1 id="logo">AI Agent Services Inc.</h1></a>
             <nav id="navigation-links">
-                <a class="nav-link" href="">Product Description</a>
+                <a class="nav-link" href="desc.html">Product Description</a>
                 <a class="nav-link" href="">About Us</a>
-                <a class="nav-link" href="">Sign Up</a>
+                <a class="nav-link" href="signup.html">Sign Up</a>
             </nav>
         </div>
     </header>
@@ -44,54 +44,48 @@
         </section>
 
         <section id="form-container" class="content-section">
-            <div>
-                <form action="thankyou.html" method="get" id="signup-form">
+            <form action="thankyou.html" method="get" id="signup-form">
 
-                    <label for="company-name">Company Name:</label>
-                    <input type="text" id="company-name" name="company" required>
+                <div class="form-group-text">
+                <label for="company-name">Company Name:</label>
+                <input type="text" id="company-name" name="company" required>
+                </div>
 
-                    <label for="business-domain">Business Domain:</label>
-                    <input type="text" id="business-domain" name="domain" required>
+                <div class="form-group-text">
+                <label for="business-domain">Business Domain:</label>
+                <input type="text" id="business-domain" name="domain" required>
+                </div>
 
-                    <label for="contact-email">Contact Email:</label>
-                    <input type="email" id="contact-email" name="email" required>
+                <div class="form-group-text">
+                <label for="contact-email">Contact Email:</label>
+                <input type="email" id="contact-email" name="email" required>
+                </div>
 
-                    <label for="use-case">Brief Description of Your Use Case:</label>
-                    <textarea id="use-case" name="use_case" rows="4" required></textarea>
+                <div class="form-group-text">
+                <label for="use-case">Brief Description of Your Use Case:</label>
+                <textarea id="use-case" name="use_case" rows="8" required></textarea>
+                </div>
 
-                    <p>Select Service Level:</p>
-                    <label>
-                        <input type="radio" name="service_level" value="basic" required>
-                        Basic
-                    </label>
-                    <br>
-                    <label>
-                        <input type="radio" name="service_level" value="standard">
-                        Standard
-                    </label>
-                    <br>
-                    <label>
-                        <input type="radio" name="service_level" value="premium">
-                        Premium
-                    </label>
-                    <br>
-                    <br>
-                    <label>
-                        <input type="checkbox" name="consent" required>
-                        I consent to the data handling policy.
-                    </label>
+                <div class="form-group">
+                <p>Select Service Level:</p>
+                <label><input type="radio" name="service_level" value="basic" required> Basic</label>
+                <label><input type="radio" name="service_level" value="standard"> Standard</label>
+                <label><input type="radio" name="service_level" value="premium"> Premium</label>
+                </div>
 
-                    <!-- Submit -->
-                    <br>
-                    <br>
-                    <button type="submit">Submit</button>
-                </form>
+                <div class="form-group">
+                <label><input type="checkbox" name="consent" required> I consent to the data handling policy.</label>
+                </div>
 
-            </div>
+                <div class="form-group">
+                <button type="submit">Submit</button>
+                </div>
+
+            </form>
         </section>
     </main>
 
     <!-- Footer containing copyright information -->
-    <footer>Copyright RoboCorp&#169;</footer>
+    <footer> AI Agent Services Inc. Copyright &#169;</footer>
 </body>
 </html>
