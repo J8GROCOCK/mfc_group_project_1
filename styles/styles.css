@@ -2,14 +2,14 @@
 
 @font-face {
     font-family: 'Roboto';
-    src: url('../assets/Roboto-VariableFont_wdth,wght.ttf') format('truetype');
+    src: url('/assets/Roboto-VariableFont_wdth,wght.ttf') format('truetype');
     font-style: normal;
     font-weight: 100 900;
 }
 
 @font-face {
     font-family: 'Roboto';
-    src: url('../assets/Roboto-Italic-VariableFont_wdth,wght.ttf') format('truetype');
+    src: url('/assets/Roboto-Italic-VariableFont_wdth,wght.ttf') format('truetype');
     font-style: italic;
     font-weight: 100 900;
 }
@@ -25,8 +25,6 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
-    line-height: 1.6;
-    color: #333;
     padding: 0;
     margin: 0;
 }
@@ -57,9 +55,9 @@ header a {
     width: 100vw;
 }
 
-#company-logo {
-    width: 15vw;
-    background-color: #1F2937;
+#logo {  
+    font-size: 24px;
+    color: #F9FAF8;
 }
 
 #navigation-links {
@@ -87,7 +85,7 @@ header a {
 }
 
 #hero-text {
-    height: 30vh;
+    height: 35vh;
     width: 35vw;
     padding-right: 5vw;
     display: flex;
@@ -120,7 +118,7 @@ header a {
 }
 
 #hero-image {
-    height: 30vh;
+    height: 35vh;
     width: 35vw;
     overflow: hidden;
 }
@@ -252,11 +250,17 @@ header a {
 footer {
     text-align: center;
       font-size: 0.9em;
-      color: #666;
+      color: #F9FAF8;
+      background-color: #1F2937;
       padding: 20px;
 }
 
 /* Product description styles */
+
+#desc-body {
+    line-height: 1.6;
+    color: #333;
+}
 
 .section {
       padding: 30px 20px;
@@ -321,9 +325,11 @@ footer {
     .cta p {
         color: #F9FAF8;
     }
+
+/* sign up styles */
+
 #form-description {
     background-color: #1F2937;
-    color: #F9FAF8;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -333,6 +339,7 @@ footer {
 
 #form-description-container {
     width:60vw;
+    color: #F9FAF8;
     display: flex;
     flex-direction: column;
     justify-content: center;
