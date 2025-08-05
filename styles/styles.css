@@ -361,7 +361,7 @@ footer {
     font-size: 20px;
 }
 
-#form-container {
+#form-container,#thankyou-container {
     background-color: #F9FAF8;
     height: 80vh;
     display: flex;
@@ -389,4 +389,14 @@ footer {
     text-align: left;
     font-size: medium;
     margin-bottom: 2vh;
+}
+
+#thankyou-description {
+    background-color: #F9FAF8;
+    color: #1F2937;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
 }
