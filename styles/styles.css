@@ -71,7 +71,7 @@ header a {
 /* content section styles */
 
 .content-section {
-    height: 50vh;
+    min-height: 50vh;
 }
 
 /* hero styles */
@@ -91,6 +91,7 @@ header a {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
 }
 
 #hero-heading {
@@ -117,10 +118,15 @@ header a {
     font-weight: bold;
 }
 
-#hero-image {
+#hero-image-container {
     height: 35vh;
     width: 35vw;
     overflow: hidden;
+}
+
+#hero-image {
+    max-width: 35vw;
+    height: auto;
 }
 
 /* information styles */
@@ -399,4 +405,197 @@ footer {
     justify-content: center;
     align-items: center;
     height: 85vh;
+}
+
+/* Media Queries */
+/* Tablet (768px – 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+
+     #hero {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #hero-text {
+        padding: 0;
+    }
+
+    #hero-image-container {
+        width: 90vw;
+        height: auto;
+    }
+
+    #hero-image {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .content-section {
+        min-height: auto;
+    }
+
+    #navigation-bar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #navigation-links {
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        padding: 1rem 0;
+    }
+
+    #hero-text, #hero-image, #cta-text {
+        width: 90vw;
+    }
+
+    #tiles-container {
+        flex-wrap: wrap;
+        gap: 2vw;
+    }
+
+    .individual-tile-container {
+        width: 40vw;
+        height: auto;
+    }
+
+    .tile-image-container {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1/1;
+    }
+
+    #quote-container {
+        width: 90vw;
+    }
+
+    #cta-container {
+        width: 90vw;
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .features, .use-cases {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .form-group-text {
+        width: 90vw;
+    }
+
+    .form-group-text input,
+    textarea {
+        width: 100%;
+    }
+}
+
+/* Mobile (≤767px) */
+@media (max-width: 767px) {
+    header, #navigation-bar, #navigation-links, #hero, #cta, #form-description {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #navigation-bar {
+        padding: 1rem 0;
+    }
+
+    #navigation-links {
+        width: 100%;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    #hero-text, #hero-image-container, #cta-text {
+        width: 90vw;
+        height: auto;
+    }
+
+    #hero-image {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    #hero-heading {
+        font-size: 32px;
+    }
+
+    #hero-button, #cta-button {
+        width: auto;
+        height: auto;
+        padding: 10px 20px;
+    }
+
+    #tiles-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .individual-tile-container {
+        width: 90vw;
+        height: auto;
+    }
+
+    .tile-image-container {
+        width: 80vw;
+        height: auto;
+        aspect-ratio: 1/1;
+    }
+
+    #quote-container {
+        width: 90vw;
+    }
+
+    #cta-container {
+        flex-direction: column;
+        width: 90vw;
+        height: auto;
+        padding: 20px;
+    }
+
+    .features, .use-cases {
+        grid-template-columns: 1fr;
+    }
+
+    .form-group-text {
+        width: 90vw;
+    }
+
+    .form-group-text input,
+    textarea {
+        width: 100%;
+    }
+     #hero {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #hero-text {
+        padding: 0;
+    }
+
+    #hero-image-container {
+        width: 90vw;
+        height: auto;
+    }
+
+    #hero-image {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .content-section {
+        min-height: auto;
+    }
 }
